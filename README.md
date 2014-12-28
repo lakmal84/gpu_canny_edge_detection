@@ -4,12 +4,12 @@ gpu_canny_edge_detection
 GPU accelerated Canny Edge Detection using OpenCV. 
 
 Port the application to your environment:
-	$ aclocal 
-	$ autoheader 
-	$ autoconf
-	$ libtoolize --automake
-	$ automake --add-missing
-	$ ./configure
+>	$ aclocal 
+>	$ autoheader 
+>	$ autoconf
+>	$ libtoolize --automake
+>	$ automake --add-missing
+>	$ ./configure
 
 Build the radius application:
 	$ make
