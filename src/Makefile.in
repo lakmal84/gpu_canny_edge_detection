@@ -1,0 +1,16 @@
+CC=g++
+CFLAGS=-c -Wall
+LIBFLAGS= -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_gpu -lopencv_objdetect
+SOURCES=edge.cpp
+OBJECTS=$(SOURCES:.cpp=.o)
+EXECUTABLE=../bin/edge_detection
+
+all: $(SOURCES) $(EXECUTABLE)
+	
+$(EXECUTABLE): $(OBJECTS) 
+	$(CC) $(LDFLAGS) $(OBJECTS) $(LIBFLAGS) -o $@
+
+.cpp.o:
+	$(CC) $(CFLAGS) $< -o $@
+clean:
+	rm -rf *.o ../bin/edge_detection
