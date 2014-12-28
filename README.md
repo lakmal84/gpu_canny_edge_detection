@@ -12,10 +12,10 @@ Port the application to your environment:
 >	$ ./configure
 
 Build the radius application:
-	$ make
+>	$ make
 
 Run the application
-	$ cd bin
-	$ ./edge_detection
+>	$ cd bin
+>	$ ./edge_detection
 
 You need a web cam to run this application. This has been tested on Nvidia Jetson TK1 platform with Logitech C270 web cam.  
